@@ -12,7 +12,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body>{children}</body>
+<body>
+        {children}
+        <script src="https://yetti.ai/widget/yetti-chat.js" data-widget-id="b678ffa6-e107-4eb5-8e39-790dfe4ac111" async defer />
     </html>
   )
 }
