@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -14,7 +15,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
-        <script src="https://yetti.ai/widget/yetti-chat.js" data-widget-id="b678ffa6-e107-4eb5-8e39-790dfe4ac111" async defer />
+        <Script
+          src="https://yetti.ai/widget/yetti-chat.js"
+          data-widget-id="b678ffa6-e107-4eb5-8e39-790dfe4ac111"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
