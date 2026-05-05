@@ -22,7 +22,6 @@ export const translations = {
       subtitle: 'Onze sloepen zijn gloednieuw, duurzaam en milieuvriendelijk. Kies je gewenste opstapplaats en geniet op het water van Almere.',
       cta: 'RESERVEER EEN SLOEP',
       items: [
-        { name: 'De Kapitein (Noorderplassen)', desc: 'Stap op de boot bij Restaurant de Kapitein aan de Noorderplassen. Met een bushalte en ruime parkeerplaats om de hoek is dit een prettige opstapplaats.' },
         { name: 'Restaurant Loetje (Noorderplassen)', desc: 'Stap aan boord bij Restaurant Loetje aan de Noorderplassen. Reserveer gemakkelijk jouw sloep via ons boekingssysteem.' },
         { name: 'Strand 22 (Almere Stad)', desc: 'Opstappen direct vanuit Almere Stad? Ook dat is mogelijk. Via de Esplanade Steiger bij Strand 22 vaar je zo het Weerwater op.' },
       ],
@@ -91,7 +90,6 @@ export const translations = {
       subtitle: 'Our sloops are brand new, sustainable and eco-friendly. Choose your boarding location and enjoy the water in Almere.',
       cta: 'RESERVE A SLOOP',
       items: [
-        { name: 'De Kapitein (Noorderplassen)', desc: 'Board the boat at Restaurant de Kapitein at the Noorderplassen. With a bus stop and spacious parking nearby, this is a convenient boarding point.' },
         { name: 'Restaurant Loetje (Noorderplassen)', desc: 'Board at Restaurant Loetje at the Noorderplassen. Easily reserve your sloop through our booking system.' },
         { name: 'Strand 22 (Almere Stad)', desc: 'Boarding directly from Almere Stad? That\'s possible too. Via the Esplanade jetty at Strand 22 you\'ll be on the Weerwater in no time.' },
       ],
@@ -160,7 +158,6 @@ export const translations = {
       subtitle: 'Unsere Sloepen sind brandneu, nachhaltig und umweltfreundlich. Wählen Sie Ihren Einstiegspunkt und genießen Sie das Wasser in Almere.',
       cta: 'SLOEP RESERVIEREN',
       items: [
-        { name: 'De Kapitein (Noorderplassen)', desc: 'Steigen Sie beim Restaurant de Kapitein an den Noorderplassen ein. Mit Bushaltestelle und großem Parkplatz in der Nähe ist dies ein bequemer Einstiegspunkt.' },
         { name: 'Restaurant Loetje (Noorderplassen)', desc: 'Steigen Sie beim Restaurant Loetje an den Noorderplassen ein. Reservieren Sie Ihren Sloep ganz einfach über unser Buchungssystem.' },
         { name: 'Strand 22 (Almere Stad)', desc: 'Direkt aus Almere Stad einsteigen? Das ist auch möglich. Über den Esplanade-Steg bei Strand 22 sind Sie sofort auf dem Weerwater.' },
       ],

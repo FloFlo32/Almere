@@ -6,7 +6,6 @@ import { useLang } from '../lib/LanguageContext'
 const YETTI_BOOK = 'https://yetti.ai/widget/wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn'
 
 const LOCATION_IMGS = [
-  'https://www.sloepverhuuralmere.nl/wp-content/uploads/2022/08/snippet_dekapiteinalmere_featuredimage_facebook_2021.jpg',
   'https://www.sloepverhuuralmere.nl/wp-content/uploads/2023/06/D20230111LOE-MT-SK-2822-1024x576-1.jpg',
   'https://www.sloepverhuuralmere.nl/wp-content/uploads/2023/06/HJBE220612550-1024x683-2.jpg',
 ]
