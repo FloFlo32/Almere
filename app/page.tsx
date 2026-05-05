@@ -54,7 +54,7 @@ function FAQ() {
                     </span>
                   </button>
                   {open === i && (
-                    <p style={{ color: '#666', fontSize: 14, lineHeight: 1.7, paddingBottom: 18 }}>
+                    <p style={{ color: '#666', fontSize: 14, lineHeight: 1.7, paddingBottom: 18, fontFamily: 'Montserrat, Arial, sans-serif' }}>
                       {item.a}
                     </p>
                   )}
@@ -101,7 +101,7 @@ export default function Home() {
         }} />
         <div className="hero-text" style={{ background: '#2a9e26', padding: '60px 48px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <p style={{ color: '#fff', fontSize: 18, marginBottom: 12 }}>{t.hero.subtitle}</p>
-          <h1 style={{ color: '#fff', fontSize: 46, fontFamily: 'Mansalva, serif', lineHeight: 1.3, marginBottom: 24 }}>
+          <h1 style={{ color: '#fff', fontSize: 46, fontFamily: 'Montserrat, Arial, sans-serif', lineHeight: 1.3, marginBottom: 24 }}>
             {t.hero.title}
           </h1>
           <p style={{ color: '#fff', marginBottom: 32 }}>{t.hero.body}</p>
