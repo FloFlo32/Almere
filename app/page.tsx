@@ -160,7 +160,7 @@ export default function Home() {
         <div className="stats-grid" style={{ maxWidth: 1248, margin: '0 auto' }}>
           {t.stats.map(s => (
             <div key={s.label}>
-              <div style={{ fontSize: 80, fontWeight: 700, color: '#333', lineHeight: 1 }}>{s.num}</div>
+              <div style={{ fontSize: 80, fontWeight: 700, color: '#2a9e26', lineHeight: 1 }}>{s.num}</div>
               <div style={{ color: '#2a9e26', fontWeight: 700, fontSize: 16, marginTop: 8 }}>{s.label}</div>
               {'sub' in s && s.sub && <div style={{ color: '#2a9e26', fontSize: 14 }}>{s.sub}</div>}
             </div>

@@ -30,7 +30,6 @@ export default function Navbar() {
     { label: t.nav.routes, href: '/routes' },
     { label: t.nav.tarieven, href: '/tarieven' },
     { label: t.nav.bootinstructies, href: '/bootinstructies' },
-    { label: t.nav.contact, href: '/contact' },
   ]
 
   return (
