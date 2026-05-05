@@ -6,14 +6,14 @@ import { useLang } from '../lib/LanguageContext'
 const YETTI_BOOK = 'https://yetti.ai/widget/wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn'
 
 const LOCATION_IMGS = [
-  'https://www.sloepverhuuralmere.nl/wp-content/uploads/2023/06/D20230111LOE-MT-SK-2822-1024x576-1.jpg',
-  'https://www.sloepverhuuralmere.nl/wp-content/uploads/2023/06/HJBE220612550-1024x683-2.jpg',
+  '/images/loetje-card.jpg',
+  '/images/strand22-card.jpg',
 ]
 
 const MEDIA_IMGS = [
-  'https://www.sloepverhuuralmere.nl/wp-content/uploads/2023/11/Nederlandse_Spoorwegen_logo.svg.png',
-  'https://www.sloepverhuuralmere.nl/wp-content/uploads/2023/11/311155141_540079848119239_2206287613562781740_n.jpg',
-  'https://www.sloepverhuuralmere.nl/wp-content/uploads/2023/11/vf-logo-website-1800x1200px.jpg',
+  '/images/ns-logo.png',
+  '/images/visit-almere.jpg',
+  '/images/visit-flevoland.jpg',
 ]
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
         minHeight: 500
       }}>
         <div style={{
-          backgroundImage: 'url(https://www.sloepverhuuralmere.nl/wp-content/uploads/2021/07/BootjesKapiteinSvenKraaijenbrink-64.jpg)',
+          backgroundImage: 'url(/images/hero.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: 400
@@ -69,7 +69,7 @@ export default function Home() {
           <p style={{ textAlign: 'center', color: '#666', maxWidth: 700, margin: '0 auto 60px' }}>
             {t.locations.subtitle}
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 480px))', gap: 32, justifyContent: 'center' }}>
             {t.locations.items.map((loc, i) => (
               <div key={i} style={{
                 border: '2px solid #2a9e26', borderRadius: 8, overflow: 'hidden',
@@ -107,7 +107,7 @@ export default function Home() {
 
       {/* CTA BANNER */}
       <section style={{
-        backgroundImage: 'linear-gradient(rgba(0,7,21,0.5), rgba(0,1,2,0.6)), url(https://www.sloepverhuuralmere.nl/wp-content/uploads/2021/08/BootjesKapiteinSvenKraaijenbrink-103-2-2-scaled.jpg)',
+        backgroundImage: 'linear-gradient(rgba(0,7,21,0.5), rgba(0,1,2,0.6)), url(/images/hero-cta.jpg)',
         backgroundSize: 'cover', backgroundPosition: 'center',
         padding: '120px 24px', textAlign: 'center'
       }}>

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/flo/Desktop/Development/Almere/sloepverhuur-next/app/globals.css"],"sourcesContent":["* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  font-family: 'Montserrat', Arial, sans-serif;\n  color: #333;\n  line-height: 1.6;\n}\n\n:root {\n  --green: #2a9e26;\n  --dark-green: #1d7a1a;\n  --light-bg: #f5f5f5;\n}\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;AAMA"}}]
+}

@@ -9,7 +9,7 @@ export default function Footer() {
       <div style={{ maxWidth: 1248, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 40 }}>
         <div>
           <img
-            src="https://www.sloepverhuuralmere.nl/wp-content/uploads/2020/05/Logo_SloepverhuurAlmere_199x96.png"
+            src="/images/logo.png"
             alt="Sloepverhuur Almere"
             style={{ height: 60, marginBottom: 16 }}
           />

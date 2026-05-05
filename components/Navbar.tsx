@@ -37,7 +37,7 @@ export default function Navbar() {
       }}>
         <Link href="/">
           <img
-            src="https://www.sloepverhuuralmere.nl/wp-content/uploads/2020/05/Logo_SloepverhuurAlmere_199x96.png"
+            src="/images/logo.png"
             alt="Sloepverhuur Almere"
             style={{ height: 80, width: 'auto' }}
           />
@@ -91,7 +91,7 @@ export default function Navbar() {
               }}
             >
               <img
-                src={`https://www.sloepverhuuralmere.nl/wp-content/plugins/sitepress-multilingual-cms/res/flags/${current.code}.png`}
+                src={`/images/flag-${current.code}.png`}
                 alt={current.label}
                 style={{ width: 20, height: 14, objectFit: 'cover', borderRadius: 2 }}
               />
@@ -124,7 +124,7 @@ export default function Navbar() {
                     onMouseLeave={e => { if (l.code !== lang) (e.currentTarget as HTMLElement).style.background = 'transparent' }}
                   >
                     <img
-                      src={`https://www.sloepverhuuralmere.nl/wp-content/plugins/sitepress-multilingual-cms/res/flags/${l.code}.png`}
+                      src={`/images/flag-${l.code}.png`}
                       alt={l.label}
                       style={{ width: 22, height: 15, objectFit: 'cover', borderRadius: 2 }}
                     />
