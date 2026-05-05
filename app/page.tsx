@@ -230,6 +230,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* VIDEO */}
+      <section style={{ padding: '60px 24px', background: '#f9f9f9' }}>
+        <div style={{ maxWidth: 800, margin: '0 auto' }}>
+          <h2 className="section-title" style={{ textAlign: 'center', fontSize: 36, marginBottom: 32 }}>{t.video.title}</h2>
+          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, borderRadius: 8, overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,0.12)' }}>
+            <iframe
+              src="https://www.youtube.com/embed/Nq5LB22XcAY"
+              title={t.video.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* MEDIA */}
       <section style={{ padding: '60px 24px' }}>
         <div style={{ maxWidth: 1248, margin: '0 auto' }}>

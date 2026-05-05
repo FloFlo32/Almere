@@ -61,6 +61,9 @@ export const translations = {
         { name: 'Marco de Rover', text: 'Zeker een aanrader. De sloep makkelijk te bedienen, is lekker ruim en comfortabel. Perfect voor een lekkere dag op het water.' },
       ],
     },
+    video: {
+      title: 'Bekijk onze video',
+    },
     media: {
       title: 'Vermeldingen in de media',
       items: [
@@ -140,6 +143,9 @@ export const translations = {
         { name: 'Marco de Rover', text: 'Definitely recommended. The sloop is easy to operate, spacious and comfortable. Perfect for a great day on the water.' },
       ],
     },
+    video: {
+      title: 'Watch our video',
+    },
     media: {
       title: 'Media mentions',
       items: [
@@ -218,6 +224,9 @@ export const translations = {
         { name: 'Sabine Perotti', text: 'Das hat so viel Spaß gemacht! Die Online-Miete war sehr einfach und die Mitarbeiter bei De Kapitein sehr freundlich. Kurze Einweisung und los!' },
         { name: 'Marco de Rover', text: 'Auf jeden Fall empfehlenswert. Der Sloep ist einfach zu bedienen, geräumig und komfortabel. Perfekt für einen tollen Tag auf dem Wasser.' },
       ],
+    },
+    video: {
+      title: 'Unser Video ansehen',
     },
     media: {
       title: 'Medienerwähnungen',
