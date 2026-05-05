@@ -34,8 +34,8 @@ export default function Navbar() {
 
   return (
     <header style={{
-      background: '#fff',
-      borderBottom: '3px solid #2a9e26',
+      background: '#2a9e26',
+      borderBottom: 'none',
       position: 'sticky',
       top: 0,
       zIndex: 9999,
@@ -62,7 +62,7 @@ export default function Navbar() {
         <nav className="nav-links">
           {navItems.map(({ label, href }) => (
             <Link key={href} href={href} style={{
-              color: '#333', textDecoration: 'none', fontSize: 13,
+              color: '#fff', textDecoration: 'none', fontSize: 13,
               fontWeight: 700, letterSpacing: '0.5px', fontFamily: 'Montserrat, Arial, sans-serif'
             }}>
               {label}
@@ -80,7 +80,7 @@ export default function Navbar() {
           </a>
 
           <a href="https://yetti.ai/widget/wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn" target="_blank" rel="noopener" style={{
-            background: '#2a9e26', color: '#fff', padding: '10px 18px', borderRadius: 3,
+            background: '#fff', color: '#2a9e26', padding: '10px 18px', borderRadius: 3,
             textDecoration: 'none', fontSize: 13, fontWeight: 700,
             fontFamily: 'Montserrat, Arial, sans-serif', whiteSpace: 'nowrap'
           }}>
@@ -93,9 +93,9 @@ export default function Navbar() {
               onClick={() => setLangOpen(v => !v)}
               style={{
                 display: 'flex', alignItems: 'center', gap: 6,
-                background: 'none', border: '1px solid #ddd',
+                background: 'none', border: '1px solid rgba(255,255,255,0.5)',
                 borderRadius: 4, padding: '6px 10px', cursor: 'pointer',
-                fontSize: 12, fontWeight: 700, color: '#333',
+                fontSize: 12, fontWeight: 700, color: '#fff',
                 fontFamily: 'Montserrat, Arial, sans-serif',
               }}
             >
@@ -143,8 +143,8 @@ export default function Navbar() {
           <div style={{ position: 'relative' }} className="mobile-lang">
             <button onClick={() => setLangOpen(v => !v)} style={{
               display: 'flex', alignItems: 'center', gap: 5,
-              background: 'none', border: '1px solid #ddd', borderRadius: 4,
-              padding: '5px 8px', cursor: 'pointer', fontSize: 12, fontWeight: 700, color: '#333'
+              background: 'none', border: '1px solid rgba(255,255,255,0.5)', borderRadius: 4,
+              padding: '5px 8px', cursor: 'pointer', fontSize: 12, fontWeight: 700, color: '#fff'
             }}>
               <img src={`/images/flag-${current.code}.png`} alt={current.label}
                 style={{ width: 18, height: 13, objectFit: 'cover', borderRadius: 2 }} />
@@ -190,14 +190,14 @@ export default function Navbar() {
       <div className={`mobile-menu${menuOpen ? ' open' : ''}`}>
         {navItems.map(({ label, href }) => (
           <Link key={href} href={href} onClick={() => setMenuOpen(false)}
-            style={{ color: '#333', textDecoration: 'none', fontSize: 14, fontWeight: 700 }}>
+            style={{ color: '#fff', textDecoration: 'none', fontSize: 14, fontWeight: 700 }}>
             {label}
           </Link>
         ))}
         <a href="https://yetti.ai/widget/wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn"
           target="_blank" rel="noopener"
           style={{
-            background: '#2a9e26', color: '#fff', padding: '12px 18px',
+            background: '#fff', color: '#2a9e26', padding: '12px 18px',
             borderRadius: 4, textDecoration: 'none', fontWeight: 700,
             fontSize: 13, textAlign: 'center'
           }}>
