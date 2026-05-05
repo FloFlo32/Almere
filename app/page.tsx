@@ -24,6 +24,7 @@ function FAQ() {
   return (
     <section style={{ padding: '80px 24px', background: '#fff' }}>
       <div style={{ maxWidth: 1248, margin: '0 auto' }}>
+        <div style={{ border: '2px solid #2a9e26', borderRadius: 8, overflow: 'hidden' }}>
         <div className="faq-grid">
           <div style={{ position: 'relative', borderRadius: 8, overflow: 'hidden', minHeight: 400 }}>
             <img
@@ -32,7 +33,7 @@ function FAQ() {
               style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             />
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '40px 40px 40px 0' }}>
             <h2 className="section-title" style={{ fontSize: 36, marginBottom: 8 }}>{t.faq.title}</h2>
             <p style={{ color: '#666', marginBottom: 32 }}>{t.faq.subtitle}</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
@@ -71,6 +72,7 @@ function FAQ() {
               </a>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
