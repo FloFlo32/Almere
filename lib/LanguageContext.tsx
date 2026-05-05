@@ -5,7 +5,7 @@ import { translations, type Lang } from './translations'
 type LanguageContextType = {
   lang: Lang
   setLang: (l: Lang) => void
-  t: typeof translations['nl']
+  t: typeof translations[Lang]
 }
 
 const LanguageContext = createContext<LanguageContextType>({
