@@ -1,9 +1,21 @@
 'use client'
 import Link from 'next/link'
 import { useState } from 'react'
+import { useLang } from '../lib/LanguageContext'
+import type { Lang } from '../lib/translations'
+
+const LANGS: { code: Lang; label: string }[] = [
+  { code: 'nl', label: 'NL' },
+  { code: 'en', label: 'EN' },
+  { code: 'de', label: 'DE' },
+]
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const [langOpen, setLangOpen] = useState(false)
+  const { lang, setLang, t } = useLang()
+
+  const current = LANGS.find(l => l.code === lang)!
 
   return (
     <header style={{
@@ -34,13 +46,13 @@ export default function Navbar() {
         {/* Desktop nav */}
         <nav style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
           {[
-            { label: 'HOME', href: '/' },
-            { label: 'ROUTES', href: '/routes' },
-            { label: 'TARIEVEN', href: '/tarieven' },
-            { label: 'BOOTINSTRUCTIES', href: '/bootinstructies' },
-            { label: 'CONTACT', href: '/contact' },
+            { label: t.nav.home, href: '/' },
+            { label: t.nav.routes, href: '/routes' },
+            { label: t.nav.tarieven, href: '/tarieven' },
+            { label: t.nav.bootinstructies, href: '/bootinstructies' },
+            { label: t.nav.contact, href: '/contact' },
           ].map(({ label, href }) => (
-            <Link key={label} href={href} style={{
+            <Link key={href} href={href} style={{
               color: '#333',
               textDecoration: 'none',
               fontSize: 13,
@@ -51,6 +63,7 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
+
           <Link href="/boeken" style={{
             background: '#2a9e26',
             color: '#fff',
@@ -62,36 +75,76 @@ export default function Navbar() {
             fontFamily: 'Montserrat, Arial, sans-serif',
             whiteSpace: 'nowrap'
           }}>
-            RESERVEREN
+            {t.nav.reserveren}
           </Link>
-          <div style={{ display: 'flex', gap: 4, borderLeft: '1px solid #e0e0e0', paddingLeft: 20, marginLeft: 4 }}>
-            {[
-              { lang: 'nl', label: 'NL' },
-              { lang: 'en', label: 'EN' },
-              { lang: 'de', label: 'DE' },
-            ].map(({ lang, label }) => (
-              <button key={lang} style={{
-                display: 'flex', alignItems: 'center', gap: 5,
-                background: 'none', border: '1px solid transparent',
-                borderRadius: 4, padding: '4px 8px', cursor: 'pointer',
-                fontSize: 12, fontWeight: 700, color: '#555',
+
+          {/* Language dropdown */}
+          <div style={{ position: 'relative', borderLeft: '1px solid #e0e0e0', paddingLeft: 20, marginLeft: 4 }}>
+            <button
+              onClick={() => setLangOpen(v => !v)}
+              style={{
+                display: 'flex', alignItems: 'center', gap: 6,
+                background: 'none', border: '1px solid #ddd',
+                borderRadius: 4, padding: '6px 10px', cursor: 'pointer',
+                fontSize: 12, fontWeight: 700, color: '#333',
                 fontFamily: 'Montserrat, Arial, sans-serif',
-                transition: 'border-color 0.15s',
               }}
-              onMouseEnter={e => (e.currentTarget.style.borderColor = '#2a9e26')}
-              onMouseLeave={e => (e.currentTarget.style.borderColor = 'transparent')}
-              >
-                <img
-                  src={`https://www.sloepverhuuralmere.nl/wp-content/plugins/sitepress-multilingual-cms/res/flags/${lang}.png`}
-                  alt={label}
-                  style={{ width: 20, height: 14, objectFit: 'cover', borderRadius: 2, display: 'block' }}
-                />
-                {label}
-              </button>
-            ))}
+            >
+              <img
+                src={`https://www.sloepverhuuralmere.nl/wp-content/plugins/sitepress-multilingual-cms/res/flags/${current.code}.png`}
+                alt={current.label}
+                style={{ width: 20, height: 14, objectFit: 'cover', borderRadius: 2 }}
+              />
+              {current.label}
+              <span style={{ fontSize: 10, color: '#888', marginLeft: 2 }}>▼</span>
+            </button>
+
+            {langOpen && (
+              <div style={{
+                position: 'absolute', top: 'calc(100% + 8px)', right: 0,
+                background: '#fff', border: '1px solid #e0e0e0',
+                borderRadius: 6, boxShadow: '0 4px 16px rgba(0,0,0,0.12)',
+                overflow: 'hidden', minWidth: 110, zIndex: 10000,
+              }}>
+                {LANGS.map(l => (
+                  <button
+                    key={l.code}
+                    onClick={() => { setLang(l.code); setLangOpen(false) }}
+                    style={{
+                      display: 'flex', alignItems: 'center', gap: 10,
+                      width: '100%', padding: '10px 14px',
+                      background: l.code === lang ? '#f0f8f0' : 'transparent',
+                      border: 'none', cursor: 'pointer',
+                      fontSize: 13, fontWeight: l.code === lang ? 700 : 400,
+                      color: l.code === lang ? '#2a9e26' : '#333',
+                      fontFamily: 'Montserrat, Arial, sans-serif',
+                      textAlign: 'left',
+                    }}
+                    onMouseEnter={e => { if (l.code !== lang) (e.currentTarget as HTMLElement).style.background = '#f5f5f5' }}
+                    onMouseLeave={e => { if (l.code !== lang) (e.currentTarget as HTMLElement).style.background = 'transparent' }}
+                  >
+                    <img
+                      src={`https://www.sloepverhuuralmere.nl/wp-content/plugins/sitepress-multilingual-cms/res/flags/${l.code}.png`}
+                      alt={l.label}
+                      style={{ width: 22, height: 15, objectFit: 'cover', borderRadius: 2 }}
+                    />
+                    {l.code === 'nl' ? 'Nederlands' : l.code === 'en' ? 'English' : 'Deutsch'}
+                    {l.code === lang && <span style={{ marginLeft: 'auto', color: '#2a9e26' }}>✓</span>}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
         </nav>
       </div>
+
+      {/* Close dropdown when clicking outside */}
+      {langOpen && (
+        <div
+          onClick={() => setLangOpen(false)}
+          style={{ position: 'fixed', inset: 0, zIndex: 9998 }}
+        />
+      )}
     </header>
   )
 }
