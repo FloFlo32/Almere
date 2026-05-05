@@ -16,6 +16,8 @@ export const translations = {
       body: 'Kies je gewenste opstapplaats bij de Kapitein Almere, Strand 22 in Almere Stad of restaurant Loetje aan de Noorderplassen.',
       cta1: 'SLOEP RESERVEREN OPSTAPPLAATS LOETJE NOORDERPLASSEN →',
       cta2: 'SLOEP RESERVEREN OPSTAPPLAATS STRAND 22 (ALMERE STAD) →',
+      bubbleTitle: 'Heb je een vraag?',
+      bubbleText: 'Stuur ons een bericht',
     },
     locations: {
       title: 'Onze locaties in Almere',
@@ -93,6 +95,8 @@ export const translations = {
       body: 'Choose your preferred boarding location at De Kapitein Almere, Strand 22 in Almere Stad or restaurant Loetje at the Noorderplassen.',
       cta1: 'BOOK A SLOOP AT LOETJE NOORDERPLASSEN →',
       cta2: 'BOOK A SLOOP AT STRAND 22 (ALMERE STAD) →',
+      bubbleTitle: 'Do you have a question?',
+      bubbleText: 'Send us a message',
     },
     locations: {
       title: 'Our locations in Almere',
@@ -170,6 +174,8 @@ export const translations = {
       body: 'Wählen Sie Ihren bevorzugten Einstiegspunkt bei De Kapitein Almere, Strand 22 in Almere Stad oder Restaurant Loetje an den Noorderplassen.',
       cta1: 'SLOEP RESERVIEREN EINSTIEG LOETJE NOORDERPLASSEN →',
       cta2: 'SLOEP RESERVIEREN EINSTIEG STRAND 22 (ALMERE STAD) →',
+      bubbleTitle: 'Haben Sie eine Frage?',
+      bubbleText: 'Schicken Sie uns eine Nachricht',
     },
     locations: {
       title: 'Unsere Standorte in Almere',

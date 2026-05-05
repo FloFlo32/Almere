@@ -128,10 +128,8 @@ export default function Home() {
               style={{ width: 68, height: 68, borderRadius: '50%', border: '3px solid #fff', objectFit: 'cover', flexShrink: 0 }}
             />
             <div>
-              <p style={{ color: '#fff', fontWeight: 700, fontSize: 15, marginBottom: 4 }}>Heb je een vraag?</p>
-              <p style={{ color: '#fff', fontSize: 14, lineHeight: 1.6 }}>
-                Stuur ons een bericht
-              </p>
+              <p style={{ color: '#fff', fontWeight: 700, fontSize: 15, marginBottom: 4 }}>{t.hero.bubbleTitle}</p>
+              <p style={{ color: '#fff', fontSize: 14, lineHeight: 1.6 }}>{t.hero.bubbleText}</p>
             </div>
           </div>
         </div>
