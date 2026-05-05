@@ -62,7 +62,7 @@ export default function Home() {
       {/* LOCATIONS */}
       <section style={{ padding: '80px 24px' }}>
         <div style={{ maxWidth: 1248, margin: '0 auto' }}>
-          <h2 className="section-title" style={{ textAlign: 'center', fontSize: 40, marginBottom: 16 }}>{t.locations.title}</h2>
+          <h2 className="section-title" style={{ textAlign: 'center', fontSize: 40, marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif', fontWeight: 700 }}>{t.locations.title}</h2>
           <p style={{ textAlign: 'center', color: '#666', maxWidth: 700, margin: '0 auto 60px' }}>
             {t.locations.subtitle}
           </p>

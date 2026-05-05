@@ -10,6 +10,10 @@ body {
   line-height: 1.6;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
 :root {
   --green: #2a9e26;
   --dark-green: #1d7a1a;
