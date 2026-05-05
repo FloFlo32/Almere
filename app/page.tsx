@@ -130,8 +130,7 @@ export default function Home() {
             <div>
               <p style={{ color: '#fff', fontWeight: 700, fontSize: 15, marginBottom: 4 }}>Heb je een vraag?</p>
               <p style={{ color: '#fff', fontSize: 14, lineHeight: 1.6 }}>
-                Stuur ons een bericht<br />
-                via het <a href="/contact" style={{ color: '#fff', fontWeight: 700 }}>contactformulier</a>
+                Stuur ons een bericht
               </p>
             </div>
           </div>
