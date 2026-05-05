@@ -17,7 +17,7 @@ export default function ContactPage() {
 
       <section style={{ padding: '60px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>
+          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif' }}>
             {p.title}
           </h1>
           <p style={{ textAlign: 'center', color: '#666', marginBottom: 48 }}>{p.subtitle}</p>
