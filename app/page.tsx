@@ -119,6 +119,22 @@ export default function Home() {
           }}>
             {t.hero.cta2}
           </a>
+
+          {/* Contact bubble */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginTop: 32 }}>
+            <img
+              src="/images/captain-avatar.jpg"
+              alt="Heb je een vraag?"
+              style={{ width: 68, height: 68, borderRadius: '50%', border: '3px solid #fff', objectFit: 'cover', flexShrink: 0 }}
+            />
+            <div>
+              <p style={{ color: '#fff', fontWeight: 700, fontSize: 15, marginBottom: 4 }}>Heb je een vraag?</p>
+              <p style={{ color: '#fff', fontSize: 14, lineHeight: 1.6 }}>
+                Stuur ons een bericht<br />
+                via het <a href="/contact" style={{ color: '#fff', fontWeight: 700 }}>contactformulier</a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
