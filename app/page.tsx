@@ -1,7 +1,5 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import BookingModule from '../components/BookingModule'
-
 export default function Home() {
   return (
     <>
@@ -45,17 +43,6 @@ export default function Home() {
           }}>
             SLOEP RESERVEREN OPSTAPPLAATS STRAND 22 (ALMERE STAD) →
           </a>
-        </div>
-      </section>
-
-      {/* BOOKING MODULE - YETTI */}
-      <section style={{ background: '#f0f8f0', padding: '60px 24px' }}>
-        <div style={{ maxWidth: 1248, margin: '0 auto' }}>
-          <h2 style={{ textAlign: 'center', fontSize: 36, marginBottom: 8, color: '#333' }}>Reserveer een sloep</h2>
-          <p style={{ textAlign: 'center', color: '#666', marginBottom: 40 }}>
-            Kies je datum, tijdstip en opstapplaats — direct online boeken via Yetti
-          </p>
-          <BookingModule />
         </div>
       </section>
 
