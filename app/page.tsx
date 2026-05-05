@@ -63,7 +63,7 @@ function FAQ() {
               <div style={{ borderTop: '1px solid #e5e5e5' }} />
             </div>
             <div style={{ marginTop: 32 }}>
-              <a href="/faq" style={{
+              <a href="/contact" style={{
                 display: 'inline-block', background: '#2a9e26', color: '#fff',
                 padding: '14px 28px', borderRadius: 4, textDecoration: 'none',
                 fontWeight: 700, fontSize: 13

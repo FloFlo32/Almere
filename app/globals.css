@@ -60,6 +60,13 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -154,6 +161,11 @@ h1, h2, h3, h4 {
   .faq-grid {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .cta-title {
