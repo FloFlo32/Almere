@@ -194,7 +194,7 @@ export default function Home() {
         <div className="about-grid" style={{ maxWidth: 1248, margin: '0 auto' }}>
           {t.about.map(s => (
             <div key={s.title}>
-              <h2 style={{ fontSize: 28, marginBottom: 16, color: '#333' }}>{s.title}</h2>
+              <h2 style={{ fontSize: 28, marginBottom: 16, color: 'var(--green)' }}>{s.title}</h2>
               <p style={{ color: '#666', lineHeight: 1.8 }}>{s.text}</p>
             </div>
           ))}

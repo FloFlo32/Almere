@@ -107,7 +107,7 @@ export default function TarievenPage() {
 
       <section style={{ padding: '60px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 20, fontFamily: 'Montserrat, Arial, sans-serif' }}>
+          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 20, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>
             {p.title}
           </h1>
           <p style={{ textAlign: 'center', color: '#666', maxWidth: 800, margin: '0 auto 48px', lineHeight: 1.7 }}>
@@ -115,7 +115,7 @@ export default function TarievenPage() {
           </p>
 
           <div style={{ background: '#f9f9f9', borderRadius: 8, padding: '32px 40px', marginBottom: 48 }}>
-            <h2 style={{ fontSize: 24, marginBottom: 12, fontFamily: 'Montserrat, Arial, sans-serif' }}>{p.weatherTitle}</h2>
+            <h2 style={{ fontSize: 24, marginBottom: 12, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>{p.weatherTitle}</h2>
             <p style={{ color: '#666', lineHeight: 1.7 }}>{p.weatherText}</p>
           </div>
 
@@ -130,7 +130,7 @@ export default function TarievenPage() {
             ))}
           </div>
 
-          <h2 style={{ fontSize: 32, textAlign: 'center', marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif' }}>{p.horecaTitle}</h2>
+          <h2 style={{ fontSize: 32, textAlign: 'center', marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>{p.horecaTitle}</h2>
           <p style={{ textAlign: 'center', color: '#666', maxWidth: 700, margin: '0 auto 40px', lineHeight: 1.7 }}>{p.horecaText}</p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
             {horeca.map(loc => (

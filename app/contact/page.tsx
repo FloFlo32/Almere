@@ -17,14 +17,14 @@ export default function ContactPage() {
 
       <section style={{ padding: '60px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif' }}>
+          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>
             {p.title}
           </h1>
           <p style={{ textAlign: 'center', color: '#666', marginBottom: 48 }}>{p.subtitle}</p>
 
           {/* FAQ block */}
           <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: 24, marginBottom: 20, fontFamily: 'Montserrat, Arial, sans-serif' }}>{p.faqTitle}</h2>
+            <h2 style={{ fontSize: 24, marginBottom: 20, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>{p.faqTitle}</h2>
             <p style={{ color: '#666', marginBottom: 12 }}>
               {p.faqText1}{' '}
               <a href="/" style={{ color: '#2a9e26' }}>{p.faqLink1}</a>.
@@ -46,7 +46,7 @@ export default function ContactPage() {
           {/* Contact form + info */}
           <div className="contact-grid">
             <div>
-              <h2 style={{ fontSize: 24, marginBottom: 20, fontFamily: 'Montserrat, Arial, sans-serif' }}>{p.formTitle}</h2>
+              <h2 style={{ fontSize: 24, marginBottom: 20, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>{p.formTitle}</h2>
               <p style={{ color: '#666', marginBottom: 20, lineHeight: 1.7 }}>
                 {p.formIntro}{' '}
                 <a href="tel:0363031807" style={{ color: '#2a9e26', fontWeight: 700 }}>036 3031 807</a>

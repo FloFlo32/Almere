@@ -45,7 +45,7 @@ export default function RoutesPage() {
 
       <section style={{ padding: '60px 24px' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
-          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 20, fontFamily: 'Montserrat, Arial, sans-serif' }}>
+          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 20, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>
             {p.title}
           </h1>
           <p style={{ textAlign: 'center', color: '#666', maxWidth: 700, margin: '0 auto 48px', lineHeight: 1.7 }}>
@@ -81,7 +81,7 @@ export default function RoutesPage() {
 
           {/* Sluizen */}
           <div style={{ borderTop: '1px solid #eee', paddingTop: 40 }}>
-            <h3 style={{ fontSize: 22, marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif' }}>{p.sluizenTitle}</h3>
+            <h3 style={{ fontSize: 22, marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>{p.sluizenTitle}</h3>
             <p style={{ color: '#666', lineHeight: 1.7, marginBottom: 20 }}>{p.sluizenIntro}</p>
             <ul style={{ color: '#666', lineHeight: 2, paddingLeft: 24 }}>
               <li>{p.sluis1}</li>
