@@ -24,22 +24,19 @@ export default function Home() {
       <Navbar />
 
       {/* HERO */}
-      <section style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
+      <section className="hero-grid" style={{
         borderRadius: 8,
         overflow: 'hidden',
         margin: '40px auto',
         maxWidth: 1248,
         minHeight: 500
       }}>
-        <div style={{
+        <div className="hero-image" style={{
           backgroundImage: 'url(/images/hero.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          minHeight: 400
         }} />
-        <div style={{ background: '#2a9e26', padding: '60px 48px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+        <div className="hero-text" style={{ background: '#2a9e26', padding: '60px 48px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <p style={{ color: '#fff', fontSize: 18, marginBottom: 12 }}>{t.hero.subtitle}</p>
           <h1 style={{ color: '#fff', fontSize: 46, fontFamily: 'Mansalva, serif', lineHeight: 1.3, marginBottom: 24 }}>
             {t.hero.title}
@@ -65,11 +62,11 @@ export default function Home() {
       {/* LOCATIONS */}
       <section style={{ padding: '80px 24px' }}>
         <div style={{ maxWidth: 1248, margin: '0 auto' }}>
-          <h2 style={{ textAlign: 'center', fontSize: 40, marginBottom: 16 }}>{t.locations.title}</h2>
+          <h2 className="section-title" style={{ textAlign: 'center', fontSize: 40, marginBottom: 16 }}>{t.locations.title}</h2>
           <p style={{ textAlign: 'center', color: '#666', maxWidth: 700, margin: '0 auto 60px' }}>
             {t.locations.subtitle}
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 480px))', gap: 32, justifyContent: 'center' }}>
+          <div className="locations-grid">
             {t.locations.items.map((loc, i) => (
               <div key={i} style={{
                 border: '2px solid #2a9e26', borderRadius: 8, overflow: 'hidden',
@@ -94,7 +91,7 @@ export default function Home() {
 
       {/* STATS */}
       <section style={{ padding: '60px 24px', background: '#f5f5f5' }}>
-        <div style={{ maxWidth: 1248, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32, textAlign: 'center' }}>
+        <div className="stats-grid" style={{ maxWidth: 1248, margin: '0 auto' }}>
           {t.stats.map(s => (
             <div key={s.label}>
               <div style={{ fontSize: 80, fontWeight: 700, color: '#333', lineHeight: 1 }}>{s.num}</div>
@@ -106,12 +103,12 @@ export default function Home() {
       </section>
 
       {/* CTA BANNER */}
-      <section style={{
+      <section className="cta-section" style={{
         backgroundImage: 'linear-gradient(rgba(0,7,21,0.5), rgba(0,1,2,0.6)), url(/images/hero-cta.jpg)',
         backgroundSize: 'cover', backgroundPosition: 'center',
         padding: '120px 24px', textAlign: 'center'
       }}>
-        <h2 style={{ color: '#fff', fontSize: 48, marginBottom: 40, whiteSpace: 'pre-line' }}>
+        <h2 className="cta-title" style={{ color: '#fff', fontSize: 48, marginBottom: 40, whiteSpace: 'pre-line' }}>
           {t.cta.title}
         </h2>
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -128,7 +125,7 @@ export default function Home() {
 
       {/* ABOUT SECTIONS */}
       <section style={{ padding: '80px 24px' }}>
-        <div style={{ maxWidth: 1248, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 48 }}>
+        <div className="about-grid" style={{ maxWidth: 1248, margin: '0 auto' }}>
           {t.about.map(s => (
             <div key={s.title}>
               <h2 style={{ fontSize: 28, marginBottom: 16, color: '#333' }}>{s.title}</h2>
@@ -141,8 +138,8 @@ export default function Home() {
       {/* REVIEWS */}
       <section style={{ padding: '60px 24px', background: '#f9f9f9' }}>
         <div style={{ maxWidth: 1248, margin: '0 auto' }}>
-          <h2 style={{ textAlign: 'center', fontSize: 36, marginBottom: 48 }}>{t.reviews.title}</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+          <h2 className="section-title" style={{ textAlign: 'center', fontSize: 36, marginBottom: 48 }}>{t.reviews.title}</h2>
+          <div className="reviews-grid">
             {t.reviews.items.map(r => (
               <div key={r.name} style={{ background: '#fff', borderRadius: 8, padding: 28, boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
                 <div style={{ color: '#fbbc04', fontSize: 18, marginBottom: 12 }}>★★★★★</div>
@@ -157,8 +154,8 @@ export default function Home() {
       {/* MEDIA */}
       <section style={{ padding: '60px 24px' }}>
         <div style={{ maxWidth: 1248, margin: '0 auto' }}>
-          <h2 style={{ textAlign: 'center', fontSize: 36, marginBottom: 48 }}>{t.media.title}</h2>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: 80, alignItems: 'center', flexWrap: 'wrap' }}>
+          <h2 className="section-title" style={{ textAlign: 'center', fontSize: 36, marginBottom: 48 }}>{t.media.title}</h2>
+          <div className="media-row" style={{ display: 'flex', justifyContent: 'center', gap: 80, alignItems: 'center', flexWrap: 'wrap' }}>
             {t.media.items.map((m, i) => (
               <div key={m.alt} style={{ textAlign: 'center' }}>
                 <img src={MEDIA_IMGS[i]} alt={m.alt} style={{ height: 50, objectFit: 'contain', display: 'block', margin: '0 auto 12px' }} />
