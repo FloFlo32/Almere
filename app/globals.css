@@ -96,7 +96,7 @@ h1, h2, h3, h4 {
   display: block;
   width: 24px;
   height: 2px;
-  background: #fff;
+  background: #2a9e26;
   border-radius: 2px;
   transition: all 0.2s;
 }
@@ -105,8 +105,8 @@ h1, h2, h3, h4 {
   display: none;
   flex-direction: column;
   padding: 16px 24px 24px;
-  background: #2a9e26;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  background: #fff;
+  border-top: 1px solid #eee;
   gap: 16px;
 }
 
@@ -115,7 +115,7 @@ h1, h2, h3, h4 {
 }
 
 .mobile-menu a {
-  color: #fff;
+  color: #2a9e26;
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
