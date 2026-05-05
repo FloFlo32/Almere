@@ -137,14 +137,14 @@ h1, h2, h3, h4 {
 /* ── Tarieven page grids ── */
 .boats-grid-3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
   margin-bottom: 24px;
 }
 
 .boats-grid-2 {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 420px));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
   justify-content: center;
   margin-bottom: 60px;
@@ -318,14 +318,6 @@ h1, h2, h3, h4 {
   }
 
   /* Tarieven page */
-  .boats-grid-3 {
-    grid-template-columns: 1fr;
-  }
-
-  .boats-grid-2 {
-    grid-template-columns: 1fr;
-  }
-
   .horeca-grid {
     grid-template-columns: 1fr;
   }
