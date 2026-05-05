@@ -8,7 +8,7 @@ export default function BoekenPage() {
       <Navbar />
       <section style={{ padding: '60px 24px', background: '#f0f8f0', minHeight: '80vh' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
-          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 12 }}>Reserveer een sloep</h1>
+          <h1 className="page-title-dark" style={{ marginBottom: 12 }}>Reserveer een sloep</h1>
           <p style={{ textAlign: 'center', color: '#666', marginBottom: 48 }}>Kies je datum, tijdstip en opstapplaats — direct online boeken</p>
           <BookingModule />
         </div>

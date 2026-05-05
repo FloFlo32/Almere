@@ -17,7 +17,7 @@ export default function ContactPage() {
 
       <section style={{ padding: '60px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif' }}>
+          <h1 className="page-title-dark" style={{ marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif' }}>
             {p.title}
           </h1>
           <p style={{ textAlign: 'center', color: '#666', marginBottom: 48 }}>{p.subtitle}</p>
@@ -72,7 +72,7 @@ export default function ContactPage() {
               }}
               style={{ display: 'flex', flexDirection: 'column', gap: 16 }}
             >
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+              <div className="form-row">
                 <div>
                   <label style={{ fontSize: 13, fontWeight: 700, display: 'block', marginBottom: 6 }}>
                     {p.firstName} <span style={{ color: '#e33' }}>*</span>
@@ -84,7 +84,7 @@ export default function ContactPage() {
                   <input type="text" placeholder={p.lastName} style={inputStyle} />
                 </div>
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+              <div className="form-row">
                 <div>
                   <label style={{ fontSize: 13, fontWeight: 700, display: 'block', marginBottom: 6 }}>
                     {p.email} <span style={{ color: '#e33' }}>*</span>
@@ -116,13 +116,11 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Banner */}
-      <section style={{
+      <section className="cta-banner" style={{
         backgroundImage: 'linear-gradient(rgba(0,7,21,0.5), rgba(0,1,2,0.6)), url(/images/hero-cta.jpg)',
-        backgroundSize: 'cover', backgroundPosition: 'center',
-        padding: '100px 24px', textAlign: 'center'
       }}>
         <p style={{ color: '#fff', fontWeight: 700, fontSize: 13, letterSpacing: 1, marginBottom: 12 }}>{cta.tagline}</p>
-        <h2 style={{ color: '#fff', fontSize: 42, fontFamily: 'Montserrat, Arial, sans-serif', marginBottom: 24, lineHeight: 1.3, whiteSpace: 'pre-line' }}>
+        <h2 className="cta-banner-title">
           {cta.title}
         </h2>
         <a href={YETTI_BOOK} style={{

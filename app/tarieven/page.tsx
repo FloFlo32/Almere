@@ -107,24 +107,24 @@ export default function TarievenPage() {
 
       <section style={{ padding: '60px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 20, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>
+          <h1 className="page-title" style={{ marginBottom: 20 }}>
             {p.title}
           </h1>
           <p style={{ textAlign: 'center', color: '#666', maxWidth: 800, margin: '0 auto 48px', lineHeight: 1.7 }}>
             {p.intro}
           </p>
 
-          <div style={{ background: '#f9f9f9', borderRadius: 8, padding: '32px 40px', marginBottom: 48 }}>
+          <div className="info-box">
             <h2 style={{ fontSize: 24, marginBottom: 12, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>{p.weatherTitle}</h2>
             <p style={{ color: '#666', lineHeight: 1.7 }}>{p.weatherText}</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, marginBottom: 24 }}>
+          <div className="boats-grid-3">
             {boats.slice(0, 3).map((boat, i) => (
               <BoatCard key={i} boat={boat} lang={lang as Lang} p={p} />
             ))}
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 420px))', gap: 24, justifyContent: 'center', marginBottom: 60 }}>
+          <div className="boats-grid-2">
             {boats.slice(3).map((boat, i) => (
               <BoatCard key={i} boat={boat} lang={lang as Lang} p={p} />
             ))}
@@ -132,15 +132,15 @@ export default function TarievenPage() {
 
           <h2 style={{ fontSize: 32, textAlign: 'center', marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>{p.horecaTitle}</h2>
           <p style={{ textAlign: 'center', color: '#666', maxWidth: 700, margin: '0 auto 40px', lineHeight: 1.7 }}>{p.horecaText}</p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+          <div className="horeca-grid">
             {horeca.map(loc => (
               <div key={loc.name} style={{ borderRadius: 8, overflow: 'hidden', border: '1px solid #eee' }}>
                 <img src={loc.img} alt={loc.name} style={{ width: '100%', height: 200, objectFit: 'cover', display: 'block' }} />
-                <div style={{ padding: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div className="horeca-item-inner" style={{ padding: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <h3 style={{ fontSize: 16, color: '#2a9e26', fontFamily: 'Montserrat, Arial, sans-serif' }}>{loc.name}</h3>
                   <a href="#" style={{
                     background: '#2a9e26', color: '#fff', padding: '8px 16px',
-                    borderRadius: 4, textDecoration: 'none', fontSize: 13, fontWeight: 700
+                    borderRadius: 4, textDecoration: 'none', fontSize: 13, fontWeight: 700, flexShrink: 0
                   }}>{p.viewSite}</a>
                 </div>
               </div>
@@ -149,13 +149,11 @@ export default function TarievenPage() {
         </div>
       </section>
 
-      <section style={{
+      <section className="cta-banner" style={{
         backgroundImage: 'linear-gradient(rgba(0,7,21,0.5), rgba(0,1,2,0.6)), url(/images/hero-cta.jpg)',
-        backgroundSize: 'cover', backgroundPosition: 'center',
-        padding: '100px 24px', textAlign: 'center'
       }}>
         <p style={{ color: '#fff', fontWeight: 700, fontSize: 13, letterSpacing: 1, marginBottom: 12 }}>{cta.tagline}</p>
-        <h2 style={{ color: '#fff', fontSize: 42, fontFamily: 'Montserrat, Arial, sans-serif', marginBottom: 24, lineHeight: 1.3, whiteSpace: 'pre-line' }}>
+        <h2 className="cta-banner-title">
           {cta.title}
         </h2>
         <a href={YETTI_BOOK} style={{

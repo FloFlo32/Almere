@@ -126,6 +126,92 @@ h1, h2, h3, h4 {
   min-height: 300px;
 }
 
+/* ── Route page grids ── */
+.route-block-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ── Tarieven page grids ── */
+.boats-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.boats-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 420px));
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.horeca-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* ── Contact form name/email rows ── */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* ── Page headings ── */
+.page-title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #2a9e26;
+}
+
+.page-title-dark {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* ── Stats numbers ── */
+.stat-number {
+  font-size: 80px;
+  font-weight: 700;
+  color: #2a9e26;
+  line-height: 1;
+}
+
+/* ── Weather/info box ── */
+.info-box {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 32px 40px;
+  margin-bottom: 48px;
+}
+
+/* ── CTA banner ── */
+.cta-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 24px;
+  text-align: center;
+}
+
+.cta-banner-title {
+  color: #fff;
+  font-size: 42px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin-bottom: 24px;
+  line-height: 1.3;
+  white-space: pre-line;
+}
+
 @media (max-width: 768px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -145,6 +231,17 @@ h1, h2, h3, h4 {
     font-size: 32px !important;
   }
 
+  /* Hero contact bubble */
+  .hero-contact-bubble {
+    gap: 12px !important;
+    margin-top: 24px !important;
+  }
+
+  .hero-contact-bubble img {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
   .locations-grid {
     grid-template-columns: 1fr;
   }
@@ -152,6 +249,10 @@ h1, h2, h3, h4 {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+  }
+
+  .stat-number {
+    font-size: 52px;
   }
 
   .about-grid {
@@ -166,6 +267,15 @@ h1, h2, h3, h4 {
   .faq-grid {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  /* Hide FAQ image on mobile to save space */
+  .faq-grid > div:first-child {
+    display: none;
+  }
+
+  .faq-grid > div:last-child {
+    padding: 32px 24px !important;
   }
 
   .contact-grid {
@@ -199,5 +309,58 @@ h1, h2, h3, h4 {
 
   .media-row {
     gap: 40px !important;
+  }
+
+  /* Route page */
+  .route-block-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Tarieven page */
+  .boats-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .boats-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .horeca-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .horeca-item-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px;
+  }
+
+  /* Contact form */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Page titles */
+  .page-title {
+    font-size: 28px;
+  }
+
+  .page-title-dark {
+    font-size: 28px;
+  }
+
+  /* Info box */
+  .info-box {
+    padding: 24px 20px;
+  }
+
+  /* CTA banner */
+  .cta-banner {
+    padding: 60px 24px;
+  }
+
+  .cta-banner-title {
+    font-size: 28px;
   }
 }

@@ -45,7 +45,7 @@ export default function RoutesPage() {
 
       <section style={{ padding: '60px 24px' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
-          <h1 style={{ textAlign: 'center', fontSize: 40, marginBottom: 20, fontFamily: 'Montserrat, Arial, sans-serif', color: '#2a9e26' }}>
+          <h1 className="page-title" style={{ marginBottom: 20 }}>
             {p.title}
           </h1>
           <p style={{ textAlign: 'center', color: '#666', maxWidth: 700, margin: '0 auto 48px', lineHeight: 1.7 }}>
@@ -73,7 +73,7 @@ export default function RoutesPage() {
           {/* Route 4 */}
           <div style={{ marginBottom: 60 }}>
             <h3 style={{ fontSize: 22, color: '#2a9e26', marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif' }}>{p.route4Title}</h3>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'start' }}>
+            <div className="route-block-grid">
               <p style={{ color: '#666', lineHeight: 1.8 }}>{p.route4Text}</p>
               <img src="/images/route-map.png" alt={p.mapLabel} style={{ width: '100%', borderRadius: 8 }} />
             </div>
@@ -104,7 +104,7 @@ function RouteBlock({ title, mapLabel, num, children }: { title: string; mapLabe
   return (
     <div style={{ marginBottom: 60 }}>
       <h3 style={{ fontSize: 22, color: '#2a9e26', marginBottom: 16, fontFamily: 'Montserrat, Arial, sans-serif' }}>{title}</h3>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'start' }}>
+      <div className="route-block-grid">
         <div>{children}</div>
         <img src="/images/route-map.png" alt={`${mapLabel} ${num}`} style={{ width: '100%', borderRadius: 8 }} />
       </div>
@@ -114,13 +114,11 @@ function RouteBlock({ title, mapLabel, num, children }: { title: string; mapLabe
 
 function CtaBanner({ cta, href }: { cta: Record<string, string>; href: string }) {
   return (
-    <section style={{
+    <section className="cta-banner" style={{
       backgroundImage: 'linear-gradient(rgba(0,7,21,0.5), rgba(0,1,2,0.6)), url(/images/hero-cta.jpg)',
-      backgroundSize: 'cover', backgroundPosition: 'center',
-      padding: '100px 24px', textAlign: 'center'
     }}>
       <p style={{ color: '#fff', fontWeight: 700, fontSize: 13, letterSpacing: 1, marginBottom: 12 }}>{cta.tagline}</p>
-      <h2 style={{ color: '#fff', fontSize: 42, fontFamily: 'Montserrat, Arial, sans-serif', marginBottom: 24, lineHeight: 1.3, whiteSpace: 'pre-line' }}>
+      <h2 className="cta-banner-title">
         {cta.title}
       </h2>
       <a href={href} style={{

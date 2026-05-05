@@ -59,13 +59,11 @@ export default function BootinstructiesPage() {
         </div>
       </section>
 
-      <section style={{
+      <section className="cta-banner" style={{
         backgroundImage: 'linear-gradient(rgba(0,7,21,0.5), rgba(0,1,2,0.6)), url(/images/hero-cta.jpg)',
-        backgroundSize: 'cover', backgroundPosition: 'center',
-        padding: '100px 24px', textAlign: 'center'
       }}>
         <p style={{ color: '#fff', fontWeight: 700, fontSize: 13, letterSpacing: 1, marginBottom: 12 }}>{cta.tagline}</p>
-        <h2 style={{ color: '#fff', fontSize: 42, fontFamily: 'Montserrat, Arial, sans-serif', marginBottom: 24, lineHeight: 1.3, whiteSpace: 'pre-line' }}>
+        <h2 className="cta-banner-title">
           {cta.title}
         </h2>
         <a href={YETTI_BOOK} style={{
