@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { useLang } from '../lib/LanguageContext'
 
+const YETTI_BOOK = 'https://yetti.ai/widget/wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn'
+
 const LOCATION_IMGS = [
   'https://www.sloepverhuuralmere.nl/wp-content/uploads/2022/08/snippet_dekapiteinalmere_featuredimage_facebook_2021.jpg',
   'https://www.sloepverhuuralmere.nl/wp-content/uploads/2023/06/D20230111LOE-MT-SK-2822-1024x576-1.jpg',
@@ -44,14 +46,14 @@ export default function Home() {
             {t.hero.title}
           </h1>
           <p style={{ color: '#fff', marginBottom: 32 }}>{t.hero.body}</p>
-          <a href="/boeken" style={{
+          <a href={YETTI_BOOK} style={{
             display: 'inline-block', background: 'transparent', border: '2px solid #fff',
             color: '#fff', padding: '14px 28px', borderRadius: 4, textDecoration: 'none',
             fontWeight: 700, marginBottom: 16, fontSize: 14
           }}>
             {t.hero.cta1}
           </a>
-          <a href="/boeken" style={{
+          <a href={YETTI_BOOK} style={{
             display: 'inline-block', background: 'transparent', border: '2px solid #fff',
             color: '#fff', padding: '14px 28px', borderRadius: 4, textDecoration: 'none',
             fontWeight: 700, fontSize: 14
@@ -78,7 +80,7 @@ export default function Home() {
                 <div style={{ padding: '24px 28px 28px' }}>
                   <h3 style={{ fontSize: 16, fontWeight: 600, color: '#555', marginBottom: 12 }}>{loc.name}</h3>
                   <p style={{ color: '#666', fontSize: 14, lineHeight: 1.6, marginBottom: 20 }}>{loc.desc}</p>
-                  <a href="/boeken" style={{
+                  <a href={YETTI_BOOK} style={{
                     display: 'block', textAlign: 'center', background: '#2a9e26', color: '#fff',
                     padding: '12px', borderRadius: 4, textDecoration: 'none', fontWeight: 700, fontSize: 13
                   }}>
@@ -114,7 +116,7 @@ export default function Home() {
           {t.cta.title}
         </h2>
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href="/boeken" style={{
+          <a href={YETTI_BOOK} style={{
             background: '#fff', color: '#333', padding: '16px 32px', borderRadius: 4,
             textDecoration: 'none', fontWeight: 700, fontSize: 15
           }}>{t.cta.book}</a>

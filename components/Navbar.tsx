@@ -64,7 +64,7 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <Link href="/boeken" style={{
+          <a href="https://yetti.ai/widget/wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn" target="_blank" rel="noopener" style={{
             background: '#2a9e26',
             color: '#fff',
             padding: '10px 18px',
@@ -76,7 +76,7 @@ export default function Navbar() {
             whiteSpace: 'nowrap'
           }}>
             {t.nav.reserveren}
-          </Link>
+          </a>
 
           {/* Language dropdown */}
           <div style={{ position: 'relative', borderLeft: '1px solid #e0e0e0', paddingLeft: 20, marginLeft: 4 }}>
