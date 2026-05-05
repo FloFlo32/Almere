@@ -64,13 +64,30 @@ export default function Navbar() {
           }}>
             RESERVEREN
           </Link>
-          <div style={{ display: 'flex', gap: 8 }}>
-            {['nl', 'en', 'de'].map(lang => (
-              <img key={lang}
-                src={`https://www.sloepverhuuralmere.nl/wp-content/plugins/sitepress-multilingual-cms/res/flags/${lang}.png`}
-                alt={lang.toUpperCase()}
-                style={{ width: 22, cursor: 'pointer', border: '1px solid #ddd' }}
-              />
+          <div style={{ display: 'flex', gap: 4, borderLeft: '1px solid #e0e0e0', paddingLeft: 20, marginLeft: 4 }}>
+            {[
+              { lang: 'nl', label: 'NL' },
+              { lang: 'en', label: 'EN' },
+              { lang: 'de', label: 'DE' },
+            ].map(({ lang, label }) => (
+              <button key={lang} style={{
+                display: 'flex', alignItems: 'center', gap: 5,
+                background: 'none', border: '1px solid transparent',
+                borderRadius: 4, padding: '4px 8px', cursor: 'pointer',
+                fontSize: 12, fontWeight: 700, color: '#555',
+                fontFamily: 'Montserrat, Arial, sans-serif',
+                transition: 'border-color 0.15s',
+              }}
+              onMouseEnter={e => (e.currentTarget.style.borderColor = '#2a9e26')}
+              onMouseLeave={e => (e.currentTarget.style.borderColor = 'transparent')}
+              >
+                <img
+                  src={`https://www.sloepverhuuralmere.nl/wp-content/plugins/sitepress-multilingual-cms/res/flags/${lang}.png`}
+                  alt={label}
+                  style={{ width: 20, height: 14, objectFit: 'cover', borderRadius: 2, display: 'block' }}
+                />
+                {label}
+              </button>
             ))}
           </div>
         </nav>
