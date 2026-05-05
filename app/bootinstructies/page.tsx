@@ -26,7 +26,7 @@ export default function BootinstructiesPage() {
           {/* Video */}
           <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, marginBottom: 48, borderRadius: 8, overflow: 'hidden' }}>
             <iframe
-              src="https://www.youtube.com/embed/dVYECrIPuZY"
+              src="https://www.youtube.com/embed/UlqlS6MYFW4"
               title={p.title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

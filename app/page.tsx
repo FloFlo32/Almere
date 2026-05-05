@@ -236,7 +236,7 @@ export default function Home() {
           <h2 className="section-title" style={{ textAlign: 'center', fontSize: 36, marginBottom: 32 }}>{t.video.title}</h2>
           <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, borderRadius: 8, overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,0.12)' }}>
             <iframe
-              src="https://www.youtube.com/embed/Nq5LB22XcAY"
+              src="https://www.youtube.com/embed/EK90Qtj5Qak"
               title={t.video.title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
