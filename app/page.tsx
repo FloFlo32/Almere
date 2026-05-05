@@ -24,9 +24,9 @@ function FAQ() {
   return (
     <section style={{ padding: '80px 24px', background: '#fff' }}>
       <div style={{ maxWidth: 1248, margin: '0 auto' }}>
-        <div style={{ border: '2px solid #2a9e26', borderRadius: 8, overflow: 'hidden' }}>
+        <div style={{ border: '2px solid #2a9e26', borderRadius: 8, overflow: 'hidden', background: '#f7f7f7' }}>
         <div className="faq-grid">
-          <div style={{ position: 'relative', borderRadius: 8, overflow: 'hidden', minHeight: 400 }}>
+          <div style={{ position: 'relative', borderRadius: 8, overflow: 'hidden', minHeight: 280, maxHeight: 320 }}>
             <img
               src="/images/faq.jpg"
               alt="FAQ"
