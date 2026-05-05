@@ -38,10 +38,19 @@ export const translations = {
       routes: 'BEKIJK DE ROUTES',
     },
     about: [
-      { title: 'Word kapitein voor een dag!', text: 'Word kapitein voor een dag! Kies een boot en zorg ervoor dat je jouw familie en vrienden de leukste plekjes van Almere leert kennen. Onze elektrische sloepen brengen je op plekken waar je normaal niet kunt komen.' },
-      { title: 'De ultieme nautische ervaring', text: 'Almere kent vele mooie plekken en vanaf het water zul je spontaan verliefd worden op de jongste stad van Nederland. Je hebt verschillende mogelijkheden om te varen met onze sloepen.' },
-      { title: 'BBQ op de boot', text: 'Zin om lekker te varen en op het water te genieten van een BBQ? Dat is zeker mogelijk! Kies voor een elektrische sloep bij locatie De Kapitein en boek er gemakkelijk een BBQ bij.' },
+      { title: 'Word kapitein voor een dag!', text: 'Word kapitein voor een dag! Kies een boot en zorg ervoor dat je jouw familie en vrienden de leukste plekjes van Almere leert kennen. Onze elektrische sloepen brengen je op plekken waar je normaal niet kunt komen. Ontdek de geheimen van de stad vanaf het water. Het nieuwe varen, stil en milieuvriendelijk, geeft jullie het ultieme gevoel van vrijheid. Reserveer direct jullie gezellige dagje uit op het water.' },
+      { title: 'De ultieme nautische ervaring', text: 'Almere kent vele mooie plekken en vanaf het water zul je spontaan verliefd worden op de jongste stad van Nederland. Je hebt verschillende mogelijkheden om te varen met onze sloepen, waar je onder andere een aantal sluisjes tegenkomt die je zelf moet bedienen. De ultieme nautische ervaring beleef je met Sloepverhuur Almere.' },
+      { title: 'BBQ op de boot', text: 'Zin om lekker te varen en op het water te genieten van een BBQ? Dat is zeker mogelijk! Kies voor een elektrische sloep bij locatie De Kapitein en boek er gemakkelijk een BBQ bij, direct via ons boekingssysteem. De kosten van de BBQ zijn €37,50 inclusief drinken. Je krijgt hiervoor 4 BBQ items, salades, sauzen en stokbrood met kruidenboter. Alles zit erbij, dus bestek, servies, servetten, olie en tangen. Je hoeft alleen maar op te stappen! Je mag altijd extra eten en drinken zelf meenemen. Er kan rekening gehouden worden met eetwensen, laat ons dit wel op tijd weten.' },
     ],
+    faq: {
+      title: 'Veel gestelde vragen',
+      subtitle: 'Hier vind je antwoorden op de meest gestelde vragen. Je kunt ons ook gerust een bericht sturen!',
+      cta: 'BEKIJK ALLE VEELGESTELDE VRAGEN',
+      items: [
+        { q: 'Mag mijn hond mee aan boord?', a: 'Het is toegestaan een hond mee te nemen aan boord, mits de boot netjes wordt achtergelaten. Denk je er zelf ook aan om voldoende water met een bak en een deken of matje waar de hond op kan liggen mee te nemen?' },
+        { q: 'Mag ik varen zonder vaarbewijs?', a: 'Ja, al onze boten zijn te besturen zonder vaarbewijs. Na een korte uitleg kun je zo het water op!' },
+      ],
+    },
     reviews: {
       title: 'Lees wat mensen vinden van Sloepverhuur Almere',
       items: [
@@ -106,10 +115,19 @@ export const translations = {
       routes: 'VIEW THE ROUTES',
     },
     about: [
-      { title: 'Be captain for a day!', text: 'Be captain for a day! Choose a boat and show your family and friends the most beautiful spots in Almere. Our electric sloops take you to places you normally can\'t reach.' },
-      { title: 'The ultimate nautical experience', text: 'Almere has many beautiful places and from the water you\'ll fall in love with the youngest city in the Netherlands. There are various ways to sail with our sloops.' },
-      { title: 'BBQ on the boat', text: 'Feel like sailing and enjoying a BBQ on the water? That\'s definitely possible! Choose an electric sloop at De Kapitein and easily add a BBQ to your booking.' },
+      { title: 'Be captain for a day!', text: 'Be captain for a day! Choose a boat and show your family and friends the most beautiful spots in Almere. Our electric sloops take you to places you normally can\'t reach. Discover the secrets of the city from the water. The new way of sailing, silent and eco-friendly, gives you the ultimate feeling of freedom. Book your fun day out on the water now.' },
+      { title: 'The ultimate nautical experience', text: 'Almere has many beautiful places and from the water you\'ll fall in love with the youngest city in the Netherlands. There are various ways to sail with our sloops, where you\'ll encounter a number of locks that you operate yourself. The ultimate nautical experience awaits you with Sloepverhuur Almere.' },
+      { title: 'BBQ on the boat', text: 'Feel like sailing and enjoying a BBQ on the water? That\'s definitely possible! Choose an electric sloop at De Kapitein and easily add a BBQ to your booking through our system. The cost of the BBQ is €37.50 including drinks. You get 4 BBQ items, salads, sauces and bread with herb butter. Everything is included: cutlery, crockery, napkins, oil and tongs. You just need to show up! You may always bring extra food and drinks. We can accommodate dietary requirements — just let us know in advance.' },
     ],
+    faq: {
+      title: 'Frequently asked questions',
+      subtitle: 'Here you\'ll find answers to the most common questions. Feel free to send us a message too!',
+      cta: 'VIEW ALL FAQs',
+      items: [
+        { q: 'Can I bring my dog on board?', a: 'Dogs are welcome on board, as long as the boat is left clean. Don\'t forget to bring enough water, a bowl, and a blanket or mat for your dog to lie on.' },
+        { q: 'Can I sail without a boating licence?', a: 'Yes, all our boats can be operated without a licence. After a short briefing you\'re ready to go!' },
+      ],
+    },
     reviews: {
       title: 'Read what people think of Sloepverhuur Almere',
       items: [
@@ -174,10 +192,19 @@ export const translations = {
       routes: 'ROUTEN ANSEHEN',
     },
     about: [
-      { title: 'Werden Sie für einen Tag Kapitän!', text: 'Werden Sie für einen Tag Kapitän! Wählen Sie ein Boot und zeigen Sie Ihrer Familie und Ihren Freunden die schönsten Plätze in Almere. Unsere elektrischen Sloepen bringen Sie an Orte, die Sie normalerweise nicht erreichen können.' },
-      { title: 'Das ultimative nautische Erlebnis', text: 'Almere hat viele schöne Orte und vom Wasser aus werden Sie sich spontan in die jüngste Stadt der Niederlande verlieben. Es gibt verschiedene Möglichkeiten, mit unseren Sloepen zu fahren.' },
-      { title: 'Grillen auf dem Boot', text: 'Lust auf Bootfahren und Grillen auf dem Wasser? Das ist auf jeden Fall möglich! Wählen Sie einen elektrischen Sloep bei De Kapitein und buchen Sie einfach ein Grillerlebnis dazu.' },
+      { title: 'Werden Sie für einen Tag Kapitän!', text: 'Werden Sie für einen Tag Kapitän! Wählen Sie ein Boot und zeigen Sie Ihrer Familie und Ihren Freunden die schönsten Plätze in Almere. Unsere elektrischen Sloepen bringen Sie an Orte, die Sie normalerweise nicht erreichen können. Entdecken Sie die Geheimnisse der Stadt vom Wasser aus. Das neue Fahren, leise und umweltfreundlich, gibt Ihnen das ultimative Freiheitsgefühl. Buchen Sie jetzt Ihren schönen Ausflug auf dem Wasser.' },
+      { title: 'Das ultimative nautische Erlebnis', text: 'Almere hat viele schöne Orte und vom Wasser aus werden Sie sich spontan in die jüngste Stadt der Niederlande verlieben. Es gibt verschiedene Möglichkeiten, mit unseren Sloepen zu fahren, wobei Sie unter anderem auf einige Schleusen treffen, die Sie selbst bedienen müssen. Das ultimative nautische Erlebnis erleben Sie mit Sloepverhuur Almere.' },
+      { title: 'Grillen auf dem Boot', text: 'Lust auf Bootfahren und Grillen auf dem Wasser? Das ist auf jeden Fall möglich! Wählen Sie einen elektrischen Sloep bei De Kapitein und buchen Sie einfach ein Grillerlebnis dazu. Die Kosten für das BBQ betragen €37,50 inklusive Getränke. Sie erhalten 4 Grillitems, Salate, Soßen und Brot mit Kräuterbutter. Alles inklusive: Besteck, Geschirr, Servietten, Öl und Zangen. Sie müssen nur einsteigen! Extra Essen und Trinken dürfen Sie gerne mitbringen. Auf Essenswünsche kann Rücksicht genommen werden — bitte rechtzeitig Bescheid geben.' },
     ],
+    faq: {
+      title: 'Häufig gestellte Fragen',
+      subtitle: 'Hier finden Sie Antworten auf die häufigsten Fragen. Sie können uns auch gerne eine Nachricht schicken!',
+      cta: 'ALLE HÄUFIGEN FRAGEN ANSEHEN',
+      items: [
+        { q: 'Darf ich meinen Hund mitbringen?', a: 'Ja, Hunde sind an Bord willkommen, solange das Boot sauber hinterlassen wird. Denken Sie daran, genug Wasser, eine Schüssel und eine Decke oder Matte für Ihren Hund mitzubringen.' },
+        { q: 'Kann ich ohne Bootsführerschein fahren?', a: 'Ja, alle unsere Boote können ohne Führerschein gefahren werden. Nach einer kurzen Einweisung können Sie sofort losfahren!' },
+      ],
+    },
     reviews: {
       title: 'Lesen Sie, was die Menschen über Sloepverhuur Almere denken',
       items: [

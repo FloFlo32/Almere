@@ -1,4 +1,5 @@
 'use client'
+import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { useLang } from '../lib/LanguageContext'
@@ -15,6 +16,66 @@ const MEDIA_IMGS = [
   '/images/visit-almere.jpg',
   '/images/visit-flevoland.jpg',
 ]
+
+function FAQ() {
+  const { t } = useLang()
+  const [open, setOpen] = useState<number | null>(null)
+
+  return (
+    <section style={{ padding: '80px 24px', background: '#fff' }}>
+      <div style={{ maxWidth: 1248, margin: '0 auto' }}>
+        <div className="faq-grid">
+          <div style={{ position: 'relative', borderRadius: 8, overflow: 'hidden', minHeight: 400 }}>
+            <img
+              src="/images/faq.jpg"
+              alt="FAQ"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+            />
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <h2 className="section-title" style={{ fontSize: 36, marginBottom: 8 }}>{t.faq.title}</h2>
+            <p style={{ color: '#666', marginBottom: 32 }}>{t.faq.subtitle}</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+              {t.faq.items.map((item, i) => (
+                <div key={i} style={{ borderTop: '1px solid #e5e5e5' }}>
+                  <button
+                    onClick={() => setOpen(open === i ? null : i)}
+                    style={{
+                      width: '100%', display: 'flex', justifyContent: 'space-between',
+                      alignItems: 'center', padding: '18px 0', background: 'none', border: 'none',
+                      cursor: 'pointer', textAlign: 'left', fontFamily: 'Montserrat, Arial, sans-serif',
+                      fontWeight: 700, fontSize: 15, color: '#333'
+                    }}
+                  >
+                    {item.q}
+                    <span style={{ fontSize: 20, color: '#2a9e26', marginLeft: 16, flexShrink: 0 }}>
+                      {open === i ? '−' : '+'}
+                    </span>
+                  </button>
+                  {open === i && (
+                    <p style={{ color: '#666', fontSize: 14, lineHeight: 1.7, paddingBottom: 18 }}>
+                      {item.a}
+                    </p>
+                  )}
+                </div>
+              ))}
+              <div style={{ borderTop: '1px solid #e5e5e5' }} />
+            </div>
+            <div style={{ marginTop: 32 }}>
+              <a href="/faq" style={{
+                display: 'inline-block', background: '#2a9e26', color: '#fff',
+                padding: '14px 28px', borderRadius: 4, textDecoration: 'none',
+                fontWeight: 700, fontSize: 13
+              }}>
+                {t.faq.cta}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
 
 export default function Home() {
   const { t } = useLang()
@@ -88,6 +149,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FAQ />
 
       {/* STATS */}
       <section style={{ padding: '60px 24px', background: '#f5f5f5' }}>
