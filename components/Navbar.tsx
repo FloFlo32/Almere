@@ -70,13 +70,10 @@ export default function Navbar() {
           ))}
 
           {/* WhatsApp */}
-          <a href="https://wa.me/2975662568" target="_blank" rel="noopener"
-            style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textDecoration: 'none', lineHeight: 1.2 }}>
-            <span style={{ display: 'flex', alignItems: 'center', gap: 5, color: '#25D366', fontWeight: 700, fontSize: 13 }}>
-              <WhatsAppIcon />
-              +297 566 2568
-            </span>
-            <span style={{ color: '#999', fontSize: 11 }}>(08:00 – 18:00)</span>
+          <a href="https://wa.me/31683786325" target="_blank" rel="noopener"
+            style={{ display: 'flex', alignItems: 'center', gap: 5, textDecoration: 'none' }}>
+            <WhatsAppIcon />
+            <span style={{ color: '#25D366', fontWeight: 700, fontSize: 13 }}>+31 683 786 325</span>
           </a>
 
           <a href="https://yetti.ai/widget/wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn" target="_blank" rel="noopener" style={{
