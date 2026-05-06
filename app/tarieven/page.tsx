@@ -20,7 +20,9 @@ const boats = [
       { labelNl: 'Halve dag (9:30–17:30)', labelEn: 'Half day (9:30–17:30)', labelDe: 'Halber Tag (9:30–17:30)', price: '€ 195,-' },
       { labelNl: 'Dag lang (9:30–21:00)', labelEn: 'Full day (9:30–21:00)', labelDe: 'Ganzer Tag (9:30–21:00)', price: '€ 235,-' },
     ],
-    locatie: 'Strand 22 en Loetje Noorderplassen',
+    locatieNl: 'Strand 22 en Loetje Noorderplassen',
+    locatieEn: 'Strand 22 and Loetje Noorderplassen',
+    locatieDe: 'Strand 22 und Loetje Noorderplassen',
   },
   {
     titleNl: 'Sloep tot 12 personen', titleEn: 'Sloop up to 12 people', titleDe: 'Sloep bis 12 Personen',
@@ -35,7 +37,9 @@ const boats = [
       { labelNl: 'Halve dag (9:30–17:30)', labelEn: 'Half day (9:30–17:30)', labelDe: 'Halber Tag (9:30–17:30)', price: '€ 275,-' },
       { labelNl: 'Dag lang (9:30–21:00)', labelEn: 'Full day (9:30–21:00)', labelDe: 'Ganzer Tag (9:30–21:00)', price: '€ 335,-' },
     ],
-    locatie: 'Strand 22 en Loetje Noorderplassen',
+    locatieNl: 'Strand 22 en Loetje Noorderplassen',
+    locatieEn: 'Strand 22 and Loetje Noorderplassen',
+    locatieDe: 'Strand 22 und Loetje Noorderplassen',
   },
   {
     titleNl: 'Sloep tot 8 personen', titleEn: 'Sloop up to 8 people', titleDe: 'Sloep bis 8 Personen',
@@ -50,7 +54,9 @@ const boats = [
       { labelNl: 'Halve dag (9:30–17:30)', labelEn: 'Half day (9:30–17:30)', labelDe: 'Halber Tag (9:30–17:30)', price: '€ 210,-' },
       { labelNl: 'Dag lang (9:30–21:00)', labelEn: 'Full day (9:30–21:00)', labelDe: 'Ganzer Tag (9:30–21:00)', price: '€ 250,-' },
     ],
-    locatie: 'Strand 22 en Loetje Noorderplassen',
+    locatieNl: 'Strand 22 en Loetje Noorderplassen',
+    locatieEn: 'Strand 22 and Loetje Noorderplassen',
+    locatieDe: 'Strand 22 und Loetje Noorderplassen',
     noteNl: 'De sloepen zijn motorisch aangedreven.',
     noteEn: 'These sloops are motor-driven.',
     noteDe: 'Diese Sloepen sind motorangetrieben.',
@@ -68,7 +74,9 @@ const boats = [
       { labelNl: 'Halve dag (9:30–17:30)', labelEn: 'Half day (9:30–17:30)', labelDe: 'Halber Tag (9:30–17:30)', price: '€ 275,-' },
       { labelNl: 'Dag lang (9:30–21:00)', labelEn: 'Full day (9:30–21:00)', labelDe: 'Ganzer Tag (9:30–21:00)', price: '€ 325,-' },
     ],
-    locatie: 'Strand 22 en Loetje Noorderplassen',
+    locatieNl: 'Strand 22 en Loetje Noorderplassen',
+    locatieEn: 'Strand 22 and Loetje Noorderplassen',
+    locatieDe: 'Strand 22 und Loetje Noorderplassen',
     noteNl: 'Motorisch aangedreven. Geldig legitimatiebewijs vereist als borg. Geen vaarbewijs nodig.',
     noteEn: 'Motor-driven. Valid ID required as deposit. No boating licence needed.',
     noteDe: 'Motorangetrieben. Gültiger Ausweis als Pfand erforderlich. Kein Bootsführerschein nötig.',
@@ -82,7 +90,9 @@ const boats = [
     tarieven: [
       { labelNl: '€37,50 per persoon inclusief eten en drinken', labelEn: '€37.50 per person including food and drinks', labelDe: '€37,50 pro Person inkl. Essen und Getränke', price: '' },
     ],
-    locatie: 'Strand 22 en Loetje Noorderplassen',
+    locatieNl: 'Strand 22 en Loetje Noorderplassen',
+    locatieEn: 'Strand 22 and Loetje Noorderplassen',
+    locatieDe: 'Strand 22 und Loetje Noorderplassen',
     noteNl: 'Eenvoudig te boeken via ons boekingssysteem.',
     noteEn: 'Easily booked through our booking system.',
     noteDe: 'Einfach über unser Buchungssystem buchbar.',
@@ -172,6 +182,7 @@ function BoatCard({ boat, lang, p }: { boat: typeof boats[0]; lang: Lang; p: Rec
   const title = lang === 'nl' ? boat.titleNl : lang === 'en' ? boat.titleEn : boat.titleDe
   const desc = lang === 'nl' ? boat.descNl : lang === 'en' ? boat.descEn : boat.descDe
   const note = lang === 'nl' ? (boat as any).noteNl : lang === 'en' ? (boat as any).noteEn : (boat as any).noteDe
+  const locatie = lang === 'nl' ? (boat as any).locatieNl : lang === 'en' ? (boat as any).locatieEn : (boat as any).locatieDe
 
   return (
     <div style={{ border: '1px solid #e0e0e0', borderRadius: 8, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
@@ -189,7 +200,7 @@ function BoatCard({ boat, lang, p }: { boat: typeof boats[0]; lang: Lang; p: Rec
           )
         })}
         <p style={{ color: '#2a9e26', fontWeight: 700, fontSize: 13, marginTop: 16, marginBottom: 4 }}>{p.locationLabel}</p>
-        <p style={{ color: '#555', fontSize: 13, marginBottom: note ? 8 : 0 }}>{boat.locatie}</p>
+        <p style={{ color: '#555', fontSize: 13, marginBottom: note ? 8 : 0 }}>{locatie}</p>
         {note && <p style={{ color: '#888', fontSize: 12, marginBottom: 16, lineHeight: 1.6 }}>{note}</p>}
         <div style={{ marginTop: 'auto', paddingTop: 16 }}>
           <a href={YETTI_BOOK} style={{

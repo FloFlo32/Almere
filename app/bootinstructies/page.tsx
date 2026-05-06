@@ -24,7 +24,7 @@ export default function BootinstructiesPage() {
           <p style={{ color: '#666', lineHeight: 1.8, marginBottom: 32 }}>{p.intro}</p>
 
           {/* Video */}
-          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, marginBottom: 48, borderRadius: 8, overflow: 'hidden' }}>
+          <div className="video-wrapper" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, marginBottom: 48, borderRadius: 8, overflow: 'hidden' }}>
             <iframe
               src="https://www.youtube.com/embed/UlqlS6MYFW4"
               title={p.title}

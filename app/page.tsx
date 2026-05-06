@@ -231,7 +231,7 @@ export default function Home() {
       </section>
 
       {/* VIDEO */}
-      <section style={{ padding: '60px 24px', background: '#f9f9f9' }}>
+      <section className="video-section" style={{ padding: '60px 24px', background: '#f9f9f9' }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <h2 className="section-title" style={{ textAlign: 'center', fontSize: 36, marginBottom: 32 }}>{t.video.title}</h2>
           <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, borderRadius: 8, overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,0.12)' }}>
