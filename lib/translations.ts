@@ -47,7 +47,7 @@ export const translations = {
     faq: {
       title: 'Veel gestelde vragen',
       subtitle: 'Hier vind je antwoorden op de meest gestelde vragen. Je kunt ons ook gerust een bericht sturen!',
-      cta: 'BEKIJK ALLE VEELGESTELDE VRAGEN',
+      cta: 'STEL JE VRAAG VIA ONZE CHAT',
       items: [
         { q: 'Mag mijn hond mee aan boord?', a: 'Het is toegestaan een hond mee te nemen aan boord, mits de boot netjes wordt achtergelaten. Denk je er zelf ook aan om voldoende water met een bak en een deken of matje waar de hond op kan liggen mee te nemen?' },
         { q: 'Mag ik varen zonder vaarbewijs?', a: 'Ja, al onze boten zijn te besturen zonder vaarbewijs. Na een korte uitleg kun je zo het water op!' },
@@ -129,7 +129,7 @@ export const translations = {
     faq: {
       title: 'Frequently asked questions',
       subtitle: 'Here you\'ll find answers to the most common questions. Feel free to send us a message too!',
-      cta: 'VIEW ALL FAQs',
+      cta: 'ASK US IN OUR CHAT',
       items: [
         { q: 'Can I bring my dog on board?', a: 'Dogs are welcome on board, as long as the boat is left clean. Don\'t forget to bring enough water, a bowl, and a blanket or mat for your dog to lie on.' },
         { q: 'Can I sail without a boating licence?', a: 'Yes, all our boats can be operated without a licence. After a short briefing you\'re ready to go!' },
@@ -211,7 +211,7 @@ export const translations = {
     faq: {
       title: 'Häufig gestellte Fragen',
       subtitle: 'Hier finden Sie Antworten auf die häufigsten Fragen. Sie können uns auch gerne eine Nachricht schicken!',
-      cta: 'ALLE HÄUFIGEN FRAGEN ANSEHEN',
+      cta: 'FRAGEN SIE UNS IM CHAT',
       items: [
         { q: 'Darf ich meinen Hund mitbringen?', a: 'Ja, Hunde sind an Bord willkommen, solange das Boot sauber hinterlassen wird. Denken Sie daran, genug Wasser, eine Schüssel und eine Decke oder Matte für Ihren Hund mitzubringen.' },
         { q: 'Kann ich ohne Bootsführerschein fahren?', a: 'Ja, alle unsere Boote können ohne Führerschein gefahren werden. Nach einer kurzen Einweisung können Sie sofort losfahren!' },
