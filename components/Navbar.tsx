@@ -76,7 +76,7 @@ export default function Navbar() {
             <span style={{ color: '#25D366', fontWeight: 700, fontSize: 13 }}>+31 683 786 325</span>
           </a>
 
-          <a href="https://yetti.ai/widget/wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn" target="_blank" rel="noopener" style={{
+          <a href="https://almere.vercel.app/?yetti-rental=true&location=631aa7fb-90ae-4a7a-acce-d2d38f516b83" target="_blank" rel="noopener" style={{
             background: '#2a9e26', color: '#fff', padding: '10px 18px', borderRadius: 3,
             textDecoration: 'none', fontSize: 13, fontWeight: 700,
             fontFamily: 'Montserrat, Arial, sans-serif', whiteSpace: 'nowrap'
@@ -191,7 +191,7 @@ export default function Navbar() {
             {label}
           </Link>
         ))}
-        <a href="https://yetti.ai/widget/wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn"
+        <a href="https://almere.vercel.app/?yetti-rental=true&location=631aa7fb-90ae-4a7a-acce-d2d38f516b83"
           target="_blank" rel="noopener"
           style={{
             background: '#2a9e26', color: '#fff', padding: '12px 18px',

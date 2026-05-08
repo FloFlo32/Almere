@@ -23,6 +23,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           data-widget-id="b678ffa6-e107-4eb5-8e39-790dfe4ac111"
           strategy="afterInteractive"
         />
+        <Script
+          src="https://yetti.ai/widget/yetti-rental.js"
+          data-widget-key="wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

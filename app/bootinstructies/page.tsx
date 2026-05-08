@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 import { useLang } from '../../lib/LanguageContext'
 import { pageTranslations } from '../../lib/pageTranslations'
 
-const YETTI_BOOK = 'https://yetti.ai/widget/wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn'
+const YETTI_BOOK = 'https://almere.vercel.app/?yetti-rental=true&location=631aa7fb-90ae-4a7a-acce-d2d38f516b83'
 
 export default function BootinstructiesPage() {
   const { lang } = useLang()
