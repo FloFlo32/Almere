@@ -4,7 +4,9 @@ import Footer from '../../components/Footer'
 import { useLang } from '../../lib/LanguageContext'
 import { pageTranslations } from '../../lib/pageTranslations'
 
-const YETTI_BOOK = 'https://yetti.ai/widget/wk_COgy_zxpukQRjKt04fEIGSEIo-PDJOzn'
+const BOOK_LOETJE   = 'https://almere.vercel.app/?yetti-rental=true&location=631aa7fb-90ae-4a7a-acce-d2d38f516b83'
+const BOOK_STRAND22 = 'https://almere.vercel.app/?yetti-rental=true&location=7a20a773-3a07-4fd8-96f1-607d93035975'
+const YETTI_BOOK = BOOK_LOETJE
 
 const boats = [
   {

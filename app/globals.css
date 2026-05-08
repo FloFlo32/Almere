@@ -11,8 +11,12 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Comic Neue', cursive;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
+}
+
+h2, h3 {
+  color: #2a9e26;
 }
 
 .section-title {
