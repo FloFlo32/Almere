@@ -168,7 +168,7 @@ export default function TarievenPage() {
         <h2 className="cta-banner-title">
           {cta.title}
         </h2>
-        <a href={YETTI_BOOK} style={{
+        <a href={YETTI_BOOK} target="_blank" rel="noopener" style={{
           display: 'inline-block', background: 'transparent', border: '2px solid #fff',
           color: '#fff', padding: '12px 24px', borderRadius: 4,
           textDecoration: 'none', fontWeight: 700, fontSize: 13
@@ -205,7 +205,7 @@ function BoatCard({ boat, lang, p }: { boat: typeof boats[0]; lang: Lang; p: Rec
         <p style={{ color: '#555', fontSize: 13, marginBottom: note ? 8 : 0 }}>{locatie}</p>
         {note && <p style={{ color: '#888', fontSize: 12, marginBottom: 16, lineHeight: 1.6 }}>{note}</p>}
         <div style={{ marginTop: 'auto', paddingTop: 16 }}>
-          <a href={YETTI_BOOK} style={{
+          <a href={YETTI_BOOK} target="_blank" rel="noopener" style={{
             display: 'block', textAlign: 'center', background: '#2a9e26', color: '#fff',
             padding: '12px', borderRadius: 4, textDecoration: 'none', fontWeight: 700, fontSize: 13
           }}>{p.bookBtn}</a>

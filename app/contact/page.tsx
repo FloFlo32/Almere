@@ -123,7 +123,7 @@ export default function ContactPage() {
         <h2 className="cta-banner-title">
           {cta.title}
         </h2>
-        <a href={YETTI_BOOK} style={{
+        <a href={YETTI_BOOK} target="_blank" rel="noopener" style={{
           display: 'inline-block', background: 'transparent', border: '2px solid #fff',
           color: '#fff', padding: '12px 24px', borderRadius: 4,
           textDecoration: 'none', fontWeight: 700, fontSize: 13
