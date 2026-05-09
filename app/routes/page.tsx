@@ -121,7 +121,7 @@ function CtaBanner({ cta, href }: { cta: Record<string, string>; href: string })
       <h2 className="cta-banner-title">
         {cta.title}
       </h2>
-      <a href={href} target="_blank" rel="noopener" style={{
+      <a href={href} style={{
         display: 'inline-block', background: 'transparent', border: '2px solid #fff',
         color: '#fff', padding: '12px 24px', borderRadius: 4,
         textDecoration: 'none', fontWeight: 700, fontSize: 13
