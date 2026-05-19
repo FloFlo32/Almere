@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script id="yetti-rental-widget" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `
 (function(){
   'use strict';
-  var WIDGET_URL='https://yetti.ai/widget-rental/rwk_iwuaItCSDnNq8kBDWuVC3H8M';
+  var WIDGET_URL='https://yetti.ai/widget-rental/rwk_PPbJUQ5E0ru88sWq0PZ8Gt21';
   function _yrStyle(){
     if(document.getElementById('_yr_s'))return;
     var s=document.createElement('style');s.id='_yr_s';
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     ov.id='_yr_ov';
     ov.setAttribute('style','position:fixed!important;top:0!important;left:0!important;width:100%!important;height:100%!important;z-index:2147483647!important;background:rgba(2,6,23,0.75);display:flex;align-items:center;justify-content:center;box-sizing:border-box;padding:8px;animation:_yrIn .2s ease;');
     var wrap=document.createElement('div');
-    wrap.setAttribute('style','position:relative;width:calc(100vw - 32px);max-width:480px;height:calc(100vh - 64px);max-height:820px;animation:_yrUp .28s cubic-bezier(.22,1,.36,1);');
+    wrap.setAttribute('style','position:relative;width:calc(100vw - 32px);max-width:740px;height:calc(100vh - 48px);max-height:900px;animation:_yrUp .28s cubic-bezier(.22,1,.36,1);');
     var box=document.createElement('div');
     box.setAttribute('style','width:100%;height:100%;border-radius:16px;overflow:hidden;box-shadow:0 48px 120px rgba(0,0,0,0.6);');
     var fr=document.createElement('iframe');
