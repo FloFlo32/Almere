@@ -4,9 +4,6 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { useLang } from '../lib/LanguageContext'
 
-const BOOK_LOETJE   = 'https://almere.vercel.app/?yetti-rental=true&location=631aa7fb-90ae-4a7a-acce-d2d38f516b83'
-const BOOK_STRAND22 = 'https://almere.vercel.app/?yetti-rental=true&location=7a20a773-3a07-4fd8-96f1-607d93035975'
-const YETTI_BOOK = BOOK_LOETJE
 
 const LOCATION_IMGS = [
   '/images/loetje-card.jpg',
@@ -107,14 +104,14 @@ export default function Home() {
             {t.hero.title}
           </h1>
           <p style={{ color: '#fff', marginBottom: 32 }}>{t.hero.body}</p>
-          <a href={BOOK_LOETJE} style={{
+          <a href="#" data-yetti-rental="" style={{
             display: 'inline-block', background: 'transparent', border: '2px solid #fff',
             color: '#fff', padding: '14px 28px', borderRadius: 4, textDecoration: 'none',
             fontWeight: 700, marginBottom: 16, fontSize: 14
           }}>
             {t.hero.cta1}
           </a>
-          <a href={BOOK_STRAND22} style={{
+          <a href="#" data-yetti-rental="" style={{
             display: 'inline-block', background: 'transparent', border: '2px solid #fff',
             color: '#fff', padding: '14px 28px', borderRadius: 4, textDecoration: 'none',
             fontWeight: 700, fontSize: 14
@@ -154,7 +151,7 @@ export default function Home() {
                 <div style={{ padding: '24px 28px 28px' }}>
                   <h3 style={{ fontSize: 16, fontWeight: 600, color: '#555', marginBottom: 12 }}>{loc.name}</h3>
                   <p style={{ color: '#666', fontSize: 14, lineHeight: 1.6, marginBottom: 20 }}>{loc.desc}</p>
-                  <a href={i === 0 ? BOOK_LOETJE : BOOK_STRAND22} style={{
+                  <a href="#" data-yetti-rental="" style={{
                     display: 'block', textAlign: 'center', background: '#2a9e26', color: '#fff',
                     padding: '12px', borderRadius: 4, textDecoration: 'none', fontWeight: 700, fontSize: 13
                   }}>
@@ -193,7 +190,7 @@ export default function Home() {
           {t.cta.title}
         </h2>
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href={YETTI_BOOK} style={{
+          <a href="#" data-yetti-rental="" style={{
             background: '#fff', color: '#333', padding: '16px 32px', borderRadius: 4,
             textDecoration: 'none', fontWeight: 700, fontSize: 15
           }}>{t.cta.book}</a>

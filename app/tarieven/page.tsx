@@ -4,9 +4,6 @@ import Footer from '../../components/Footer'
 import { useLang } from '../../lib/LanguageContext'
 import { pageTranslations } from '../../lib/pageTranslations'
 
-const BOOK_LOETJE   = 'https://almere.vercel.app/?yetti-rental=true&location=631aa7fb-90ae-4a7a-acce-d2d38f516b83'
-const BOOK_STRAND22 = 'https://almere.vercel.app/?yetti-rental=true&location=7a20a773-3a07-4fd8-96f1-607d93035975'
-const YETTI_BOOK = BOOK_LOETJE
 
 const boats = [
   {
@@ -168,7 +165,7 @@ export default function TarievenPage() {
         <h2 className="cta-banner-title">
           {cta.title}
         </h2>
-        <a href={YETTI_BOOK} style={{
+        <a href="#" data-yetti-rental="" style={{
           display: 'inline-block', background: 'transparent', border: '2px solid #fff',
           color: '#fff', padding: '12px 24px', borderRadius: 4,
           textDecoration: 'none', fontWeight: 700, fontSize: 13
@@ -205,7 +202,7 @@ function BoatCard({ boat, lang, p }: { boat: typeof boats[0]; lang: Lang; p: Rec
         <p style={{ color: '#555', fontSize: 13, marginBottom: note ? 8 : 0 }}>{locatie}</p>
         {note && <p style={{ color: '#888', fontSize: 12, marginBottom: 16, lineHeight: 1.6 }}>{note}</p>}
         <div style={{ marginTop: 'auto', paddingTop: 16 }}>
-          <a href={YETTI_BOOK} style={{
+          <a href="#" data-yetti-rental="" style={{
             display: 'block', textAlign: 'center', background: '#2a9e26', color: '#fff',
             padding: '12px', borderRadius: 4, textDecoration: 'none', fontWeight: 700, fontSize: 13
           }}>{p.bookBtn}</a>
